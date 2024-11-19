@@ -1,21 +1,35 @@
-# Crazyflie PC client [![CI](https://github.com/bitcraze/crazyflie-clients-python/workflows/CI/badge.svg)](https://github.com/bitcraze/crazyflie-clients-python/actions?query=workflow%3ACI) [![cfclient](https://snapcraft.io//cfclient/badge.svg)](https://snapcraft.io/cfclient)
+# Crazyflie PC client for esp-drone
 
+The esp-drone PC client is a fork of the [Crazyflie PC client](./ORIGIN_README.md). The communication with esp-drone and the implementation of the CRTP protocol to control the esp-drone is handled by the modified [cflib](https://github.com/leeebo/crazyflie-lib-python)
 
-The Crazyflie PC client enables flashing and controlling the Crazyflie.
-It implements the user interface and high-level control (for example gamepad handling).
-The communication with Crazyflie and the implementation of the CRTP protocol to control the Crazyflie is handled by the [cflib](https://github.com/bitcraze/crazyflie-lib-python) project.
+## cflib
+
+The client requires the folked [cflib](https://github.com/leeebo/crazyflie-lib-python).
+If you want to develop with the lib too, follow the cflib readme to install it.
 
 ## Installation
-See the [installation instructions](docs/installation/install.md) in the GitHub docs folder.
 
-## Official Documentation
+Clone repository:
 
-Check out the [Bitcraze crazyflie-client-python documentation](https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/) on our website.
+```bash
+git clone https://github.com/jobitjoseph/crazyflie-clients-python.git
+cd crazyflie-clients-python
+```
 
-## Contribute
-Go to the [contribute page](https://www.bitcraze.io/contribute/) on our website to learn more.
+Install the client from source:
 
-### Test code for contribution
-Run the automated build locally to test your code
+```bash
+pip3 install -e .
+```
 
-	python3 tools/build/build
+## Run
+
+```bash
+cfclient
+```
+
+## Documentation
+
+Check out https://espressif-docs.readthedocs-hosted.com/projects/espressif-esp-drone/en/latest/gettingstarted.html
+
+then Check out the [Bitcraze crazyflie-client-python documentation](https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/) on website.
