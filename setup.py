@@ -90,7 +90,7 @@ setup(
         ],
     },
 
-    install_requires=['cflib @ git+https://github.com/leeebo/crazyflie-lib-python.git',
+    install_requires=['cflib @ git+https://github.com/jobitjoseph/crazyflie-lib-python.git',
                       'setuptools',
                       'appdirs~=1.4.0',
                       'pyzmq~=26.0',
